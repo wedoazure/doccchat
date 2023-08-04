@@ -1,6 +1,9 @@
 # Azure OpenAI Document Chat
 Generated with AI:
-This application uses Azure Form Recognizer, Azure Storage, Azure Cognitive Search, and Azure OpenAI's GPT-3 and embedding models to enable users to chat with their documents. The application is built using Streamlit and orchestrated with LanhChain.
+This application uses Azure Form Recognizer, Azure Storage, Azure Cognitive Search, and Azure OpenAI's GPT-3 and embedding models to enable users to chat with their documents. The application is built using Streamlit and orchestrated with LangChain.
+
+# This is a clone!
+Of - https://github.com/smitzlroy/chatwithdoc-aoai-acs-vector
 
 ## Features
 Upload multiple PDF documents
@@ -10,15 +13,10 @@ Store the vectors in Azure Cognitive Search
 Retrieve relevant document chunks in response to user queries, using a chat interface
 
 ## Prerequisites
-* You need Python 3.6 or later to run this application. You can have multiple Python versions (2.x and 3.x) installed on the same system without problems.
-* Azure OpenAI service with deployment of models
-* Azure Cognitive Search Service (for Form Recogniser API)
-* Azure Storage Account
+WIP - there are quite a few...
 
 
-## install Packages
 
-`pip install -r requirements.txt`
 
 ## Run the app
 
@@ -32,25 +30,25 @@ Once the streamlit page opens you can upload your PDF file and click "process yo
 - LangChain creating the vectorstore in Azure Cognitive Search and storing vectors
 - Now you can ask questions of your docs in the text window
 
-## Update your .env 
+## Create your own .env 
 
-OPENAI_API_BASE: Your OpenAI API base URL 
+OPENAI_API_BASE=Your OpenAI API base URL 
 
-OPENAI_API_KEY: Your OpenAI API key 
+OPENAI_API_KEY=Your OpenAI API key 
 
-OPENAI_API_VERSION: Your OpenAI API version 
+OPENAI_API_VERSION=Your OpenAI API version 
 
-AZURE_COGNITIVE_SEARCH_SERVICE_NAME: Your Azure Cognitive Search service name 
+AZURE_COGNITIVE_SEARCH_SERVICE_NAME=Your Azure Cognitive Search service name 
 
-AZURE_COGNITIVE_SEARCH_API_KEY: Your Azure Cognitive Search API key 
+AZURE_COGNITIVE_SEARCH_API_KEY=Your Azure Cognitive Search API key 
 
-FORM_RECOGNIZER_ENDPOINT: Your Azure Form Recognizer endpoint 
+FORM_RECOGNIZER_ENDPOINT=Your Azure Form Recognizer endpoint 
 
-FORM_RECOGNIZER_KEY: Your Azure Form Recognizer key 
+FORM_RECOGNIZER_KEY=Your Azure Form Recognizer key 
 
-AZURE_STORAGE_CONNECTION_STRING: Your Azure Storage connection string 
+AZURE_STORAGE_CONNECTION_STRING=Your Azure Storage connection string 
 
-AZURE_STORAGE_CONTAINER: Your Azure Storage container name 
+AZURE_STORAGE_CONTAINER=Your Azure Storage container name 
 
 
 
